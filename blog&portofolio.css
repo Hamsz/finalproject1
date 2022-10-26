@@ -238,3 +238,7 @@ body{
 #carouselExampleIndicators{
     background-color: #5cafee;
 }
+
+.hover-img:hover{
+    cursor: pointer;
+}
