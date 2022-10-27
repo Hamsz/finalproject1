@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/e7ebc2fc39.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="todolist.css" />
+    <title>Todo Do List</title>
+</head>
+
+<body>
+     <!--Membuat navbar-->
+     <nav class="site-nav bg-primary">
+        <div class="container">
+          <div class="site-navigation">
+            <a href="#" class="logo m-0">JASLO <span class="text-primary">.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                  <ul class="js-clone-nav d-none d-lg-inline-block text-right site-menu float-right">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="portofolio.html">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <li class="nav-link"><a href="contact.html">Contact Us</a></li>
+                    </li>
+                    <li class="active">
+                      <li><a href="todolist.html">To Do List</a></li>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-background">
+        <div class="hero hero-inner">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 mx-auto text-center">
+                <div class="intro-wrap">
+                  <h1 class="mb-0 img-capt" style="color:black ;">To Do List</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt sunt nisi, fuga non ea, quasi quidem dolorum aliquid eligendi molestias modi ex pariatur unde exercitationem labore inventore quas quo?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      
+      <div class="main-section checklist ">
+        <div class="row d-flex m-2">
+          <div class="mb-3 col-6 col md-12 col-lg-6">
+            <br>
+                <h1> Todo List</h1>
+            <form>
+                <input type="text" class="todo-input" maxlength="40" />
+                <button class="todo-button" type="submit">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+                <div class="select">
+                    <select name="todos" class="filter-todo">
+                        <option value="all">All</option>
+                        <option value="completed">Finish</option>
+                        <option value="uncompleted">Not Yet</option>
+                    </select>
+                </div>
+            </form>
+            
+            <div class="todo-container">
+                <ul class="todo-list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!--Footer-->
+      <div class="site-footer">
+        <div class="inner first">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="widget">
+                  <h3 class="heading" style="color: #0085d8;"><b>About Jaslo</b></h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt illo cum laboriosam, quidem sapiente repudiandae earum, omnis nulla unde ut voluptates harum eveniet temporibus, atque deserunt veritatis dolor. Nisi, doloribus?</p>
+                </div>
+          
+                <div class="widget">
+                  <h3 class="heading" style="color: #0085d8;"><b>Photo Stream</b></h3>
+              <div class="d-flex justify-content-start mt-4">
+              <img src="img/1.png" class="" style="height: 60px; width: 60px; margin-right: 5px" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"/>
+              <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="staticBackdropLabel">
+                        Jaslo Photo Stream
+                      </h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/1.png" style="height: 300px; width: 300px;  display: block; margin-left: auto; margin-right: auto;"/> 
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="img/2 (2).png" class="" style="height: 60px; width: 60px; margin-right: 5px" data-bs-toggle="modal" data-bs-target="#staticBackdrop2 " />
+              <div class="modal fade"id="staticBackdrop2"data-bs-backdrop="static"data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="staticBackdropLabel">
+                        Jaslo Photo Stream
+                      </h2>
+                      <button
+                        type="button" class="btn-close" data-bs-dismiss="modal"aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/2 (2).png"style="height: 250px; width: 250px; display: block;margin-left: auto; margin-right: auto;"/>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <img src="img/3.png" class="" style="height: 60px; width: 60px; margin-right: 5px" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" />
+              <div class="modal fade"id="staticBackdrop3"data-bs-backdrop="static"data-bs-keyboard="false"tabindex="-1"aria-labelledby="staticBackdropLabel"aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="staticBackdropLabel">
+                        Jaslo Photo Stream
+                      </h2>
+                      <button type="button"class="btn-close"data-bs-dismiss="modal"aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/3.png" style="height: 250px;width: 250px;display: block;margin-left: auto; margin-right: auto;"/>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <img src="img/4.png" class="" style="height: 60px; width: 60px; margin-right: 5px" data-bs-toggle="modal" data-bs-target="#staticBackdrop4" />
+              <div class="modal fade"id="staticBackdrop4"data-bs-backdrop="static"data-bs-keyboard="false"tabindex="-1"aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="staticBackdropLabel">
+                        Jaslo Photo Stream
+                      </h2>
+                      <button type="button"class="btn-close"data-bs-dismiss="modal"aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/4.png"style="height: 250px;width: 250px;display: block;margin-left: auto;margin-right: auto;"/>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <img src="img/5.png" class="" style="height: 60px; width: 60px; margin-right: 5px" data-bs-toggle="modal" data-bs-target="#staticBackdrop5" />
+              <div class="modal fade"id="staticBackdrop5"data-bs-backdrop="static"data-bs-keyboard="false"tabindex="-1"aria-labelledby="staticBackdropLabel"aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="staticBackdropLabel">
+                        Jaslo Photo Stream
+                      </h2>
+                      <button type="button"class="btn-close"data-bs-dismiss="modal"aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/5.png" style="height: 250px;width: 250px;display: block;margin-left: auto; margin-right: auto;"/>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+              <div class="col-md-6 col-lg-2 pl-lg-5">
+                <div class="widget">
+                  <h3 class="heading" style="color: #0085d8;"><b>Pages</b></h3>
+                  <ul class="links list-unstyled">
+                    <li><a href="blog.html">Home</a></li>
+                    <li><a href="portofolio.html">Portofolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">To Do List</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-2">
+                <div class="widget">
+                  <h3 class="heading" style="color:#0085d8;"><b>Resources</b></h3>
+                  <ul class="links list-unstyled">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Term of Use</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="widget">
+                  <h3 class="heading" style="color: #0085d8;"><b>Contact</b></h3>
+                  <ul class="list-unstyled quick-info links">
+                    <li class="email"><a href="#">Jaslo@gmail.com</a></li>
+                    <li class="phone"><a href="#">+123 456 789 10</a></li>
+                    <li class="address"><a href="#">Jl. Buah Batu, Bandung</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="inner dark">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. &mdash; Designed with love by <a href="index.html" class="link-highlight">Jaslo</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Sricpt JS-->
+    <script>
+        // Selectors
+
+const todoInput = document.querySelector(".todo-input");
+const todoButton = document.querySelector(".todo-button");
+const todoList = document.querySelector(".todo-list");
+const filter = document.querySelector(".filter-todo");
+
+// Event Listeners
+
+document.addEventListener("DOMContentLoaded", getTodos);
+todoButton.addEventListener("click", addTodo);
+todoList.addEventListener("click", deleteCheck);
+filter.addEventListener("change", filterTodo);
+
+// Functions
+
+function createComponents(value) {
+    // Create div
+    const todoDiv = document.createElement("div");
+    todoDiv.classList.add("todo");
+
+    // Create li
+    const newTodo = document.createElement("li");
+    newTodo.innerText = value;
+    newTodo.classList.add("todo-item");
+    todoDiv.appendChild(newTodo);
+
+    // Create Completed button
+    const completedButton = document.createElement("button");
+    completedButton.innerHTML = "<i class='fas fa-check'></i>";
+    completedButton.classList.add("check-btn");
+    todoDiv.appendChild(completedButton);
+
+    // Create Trash button
+    const trashButton = document.createElement("button");
+    trashButton.innerHTML = "<i class='fas fa-trash'></i>";
+    trashButton.classList.add("trash-btn");
+    todoDiv.appendChild(trashButton);
+
+    // Append all
+    todoList.appendChild(todoDiv);
+}
+
+function addTodo(e) {
+    // Validate and prevent refresh
+    e.preventDefault();
+    if (!todoInput.value) return;
+
+    // Creating all components
+    createComponents(todoInput.value);
+
+    // Add todo to local storage
+    saveLocalTodos(todoInput.value);
+
+    // Clear and focus Input
+    todoInput.value = "";
+}
+
+function deleteCheck(e) {
+    const item = e.target;
+    const todo = item.parentElement;
+
+    // delete todo
+    if (item.classList[0] === "trash-btn") {
+        todo.classList.add("fall");
+        todo.addEventListener("animationend", function () {
+            removeLocalTodos(todo);
+            todo.remove();
+        });
+    }
+
+    // completed todo
+    if (item.classList[0] === "check-btn") todo.classList.toggle("completed");
+}
+
+function filterTodo(e) {
+    const value = e.target.value;
+    const todos = todoList.childNodes;
+    console.log(value);
+    todos.forEach(function (todo) {
+        switch (value) {
+            case "all":
+                todo.style.display = "flex";
+                break;
+            case "completed":
+                if (todo.classList.contains("completed")) {
+                    todo.style.display = "flex";
+                } else {
+                    todo.style.display = "none";
+                }
+
+                break;
+            case "uncompleted":
+                if (!todo.classList.contains("completed")) {
+                    todo.style.display = "flex";
+                } else {
+                    todo.style.display = "none";
+                }
+                break;
+            default:
+                return;
+        }
+    });
+}
+
+function saveLocalTodos(todo) {
+    // Check
+    let todos;
+
+    // if it HAS already an item, get it
+    if (localStorage.getItem("todos") !== null) {
+        todos = JSON.parse(localStorage.getItem("todos"));
+    } else {
+        todos = [];
+    }
+
+    todos.push(todo);
+    localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function getTodos() {
+    let todos;
+
+    // if it HAS already an item, get it
+    if (localStorage.getItem("todos") !== null) {
+        todos = JSON.parse(localStorage.getItem("todos"));
+    } else {
+        todos = [];
+    }
+
+    todos.forEach(function (todo) {
+        createComponents(todo);
+    });
+}
+
+function removeLocalTodos(todo) {
+    let todos;
+
+    if (localStorage.getItem("todos") !== null) {
+        todos = JSON.parse(localStorage.getItem("todos"));
+    } else {
+        todos = [];
+    }
+
+    const todoIndex = todo.children[0].innerText;
+    todos.splice(todos.indexOf(todoIndex), 1);
+    localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+    </script>
+</body>
+
+</html>
