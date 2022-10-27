@@ -242,3 +242,7 @@ body{
 .hover-img:hover{
     cursor: pointer;
 }
+
+.text-justify{
+    text-align: justify;
+}
